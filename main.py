@@ -6,7 +6,7 @@ def standardize_names(character_name : str) -> str:
 # standardize_title(title)
 def standardize_title(title : str) -> str:
     output = []
-    for i ,word in enumerate(title.split()):
+    for word in title.split():
         output.append(word.title())
     return(' '.join(output))
        
@@ -56,9 +56,9 @@ def text_merge(blog_a : str, blog_b : str) -> str:
 
     output = []
 
-    for i in range(len(merged_list)):
-        capital_letter = merged_list[i][0].upper()
-        new_phrase = merged_list[i].replace(merged_list[i][0],capital_letter,1)
+    for i ,phrase in enumerate(merged_list):
+        capital_letter = phrase[0].upper()
+        new_phrase = phrase.replace(phrase[0],capital_letter,1)
         output.append(new_phrase)
 
     output = '. '.join(output)

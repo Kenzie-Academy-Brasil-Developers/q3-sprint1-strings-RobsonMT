@@ -1,5 +1,5 @@
-venv/
-*.pyc
+venv
 .vscode
-.pytest_cache
 __pycache__
+*.pyc
+*.pytest_cache
